@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/win_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/win_msg"
+        android:textAlignment="center"
+        android:textColor="@color/light_orange"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/king_astronaut"
+        android:layout_width="154dp"
+        android:layout_height="141dp"
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@drawable/king_astronaut" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
+
+    <TextView
+        android:id="@+id/about_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:background="#8B000000"
+        android:padding="5dp"
+        android:text="@string/about_score"
+        android:textColor="@color/light_yellow"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/light_yellow"
+        android:padding="10dp"
+        android:text="@string/score"
+        android:textColor="@color/black_purple"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/msg_score_win"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_win_score"
+        android:textAlignment="center"
+        android:textColor="@color/light_yellow"
+        android:textStyle="italic" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="31dp" />
+
+    <Button
+        android:id="@+id/retry_btn_win"
+        style="@style/black_purple_btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retry_btn_win"
+        android:onClick="retryButtonClicked"
+        app:cornerRadius="15dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/high_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_yellow"
+        android:text="@string/high_scores"
+        android:textColor="@color/black_purple"
+        app:cornerRadius="15dp" />
+
+
+</LinearLayout>

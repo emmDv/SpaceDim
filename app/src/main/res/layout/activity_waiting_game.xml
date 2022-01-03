@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_wait_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/title_wait_game"
+        android:textAlignment="center"
+        android:textColor="@color/light_yellow"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/talk_astronaut"
+        android:layout_width="154dp"
+        android:layout_height="141dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/talk_astronaut_img_description"
+        app:srcCompat="@drawable/talk_astronaut" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:background="@color/light_yellow"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="3dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="5dp"
+            app:srcCompat="@drawable/green_circle_socket" />
+
+        <TextView
+            android:id="@+id/socket_state_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="3dp"
+            android:text="@string/socket_state_connect"
+            android:textColor="@color/black_purple" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/go_game_btn"
+        style="@style/black_purple_btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/go_game_btn"
+        android:onClick="buttonClicked"
+        app:cornerRadius="15dp" />
+
+    <TextView
+        android:id="@+id/room_name_wg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="@string/room_name_wg"
+        android:textAlignment="center"
+        android:textColor="@color/light_yellow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/current_gamer"
+                    layout="@layout/list_gamers_item" />
+                <include
+                    android:id="@+id/gamer_2"
+                    layout="@layout/list_gamers_item" />
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

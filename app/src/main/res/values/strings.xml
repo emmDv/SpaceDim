@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SpaceDim</string>
+    <string name="title_template_login">DIM</string>
+    <string name="subtitle_template_login">Space Team</string>
+    <string name="introduction_login_template">I am a famous Astronaut</string>
+    <string name="text_unexist_account">I am new to Space Program</string>
+    <string name="launch_btn_login">Launch</string>
+    <string name="register_btn">Register an astronaut profile</string>
+    <string name="title_wait_room_empty">Enter a room name to join or create a game...</string>
+    <string name="socket_state_wr">Socket inactive</string>
+    <string name="text_room_wr">No Room Joined</string>
+    <string name="join_game_btn">Join a game room</string>
+    <string name="talk_astronaut_img_description">Talk astronauts</string>
+    <string name="title_wait_game">Set your status to Ready, when everyone is ready, game will start</string>
+    <string name="socket_state_connect">Socket connected</string>
+    <string name="go_game_btn">I am ready</string>
+    <string name="room_name_wg">testRoom</string>
+    <string name="waiting_state">Waiting</string>
+    <string name="ready_state">Ready</string>
+    <string name="title_current_game">You are currently travelling in the galaxy 1</string>
+    <string name="game_comment">Il y a trop de gaz !</string>
+    <string name="switch_teleporteur">Téléporteur</string>
+    <string name="switch_hyper_propulseur">Hyper-propulseur</string>
+    <string name="simple_btn_sens_vie">Le sens de la vie</string>
+    <string name="simple_btn_degaz">Dégazer</string>
+    <string name="win_msg">Good team, you won!\nCongrats!</string>
+    <string name="lose_msg">You lose, what a team...</string>
+    <string name="about_score">Your score for this game was:</string>
+    <string name="score">305</string>
+    <string name="msg_win_score">You earn what you deserve</string>
+    <string name="msg_lose_score">You reap what you sow...</string>
+    <string name="retry_btn_win">Retry (Winner)</string>
+    <string name="retry_btn_lose">Retry (Loser)</string>
+    <string name="high_scores">High scores</string>
+
+</resources>
